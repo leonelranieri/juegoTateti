@@ -22,7 +22,13 @@
   width: 150px; /* Ajusta el ancho del botón según tus necesidades */
   height: 150px; /* Ajusta la altura del botón según tus necesidades */
   margin: 0;
-  font-size: 1em; /* Ajusta el tamaño de fuente del botón según tus necesidades */
+  font-size: 2em; /* Ajusta el tamaño de fuente del botón según tus necesidades */
+  /* background-color: transparent; Establece el fondo transparente por defecto */
+}
+
+.square.highlight {
+  background-color: lightblue; /* Puedes ajustar el color a tu preferencia */
+  border: 2px solid darkblue; /* Puedes ajustar el borde a tu preferencia */
 }
 
 .board-row {
@@ -61,4 +67,22 @@ h1 {
 
 body {
   background: linear-gradient(to bottom, violet, white); /* Aplica un degradado vertical */
+}
+
+.winner {
+  background-color: yellow;
+}
+
+.reset {
+  border-radius: 10%;
+  color: yellow;
+  background-color: blueviolet;
+  position: fixed;
+  right: 26%; /* Ajusta según sea necesario */
+  top: 80%; /* Centra verticalmente, ajusta según sea necesario */
+  transform: translateY(-50%);
+}
+
+.square.highlighted {
+  background-color: lightblue;
 }
