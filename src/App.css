@@ -14,11 +14,21 @@
   font-weight: bold; /* Agrega negrita */
 }
 
-.squareClass {
+.square, 
+.square:active {
+  outline: none; /* Evita que se muestre un contorno al hacer clic */
+  transform: none; /* Evita cualquier transformación al hacer clic */
   border: 1px solid #000; /* Agrega un borde constante */
-  width: 50px; /* Ajusta el ancho del botón según tus necesidades */
-  height: 50px; /* Ajusta la altura del botón según tus necesidades */
+  width: 150px; /* Ajusta el ancho del botón según tus necesidades */
+  height: 150px; /* Ajusta la altura del botón según tus necesidades */
+  margin: 0;
   font-size: 1em; /* Ajusta el tamaño de fuente del botón según tus necesidades */
+}
+
+.board-row {
+    display: flex; /* o display: grid; */
+    justify-content: flex-start; /* Ajusta según sea necesario */
+    align-items: flex-start; /* Ajusta según sea necesario */
 }
 
 .game {
